@@ -1,0 +1,93 @@
+body {
+  margin: 0; 
+  padding: 0; 
+  background-image: url('/Users/ungadeu18students.desu.edu/Desktop/Web\ Develop\ Work\:Notes/Web\ Designing\ for\ Educational/MODERN\ TECH\ background.png'); 
+  background-size: cover; /* Cover the entire viewport */
+  background-repeat: no-repeat; /* Prevent image from repeating */
+  background-position: center center; /* Center the image */
+  height: 100vh; /* Make the body take up the full viewport height */
+  color: white; /* Set default text color to white for visibility */
+  font-family: sans-serif; /* Set a default font */
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+.left-section {
+    width: 35%; /* Adjust as needed */
+    padding: 20px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)); /* Gradient background */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.modern-tech-title {
+    color: #00ff99; /* Green title */
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.basics-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.basics-section li {
+    margin-bottom: 10px;
+}
+
+.nav-section {
+    margin-top: 20px;
+}
+
+.nav-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.nav-item span {
+    background-color: #00ff99; /* Green circle */
+    color: #000;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 15px;
+}
+
+.right-section {
+    width: 65%; /* Adjust as needed */
+    padding: 20px;
+    background-image: linear-gradient(to left, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)); /* Gradient background */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.right-section p {
+    line-height: 1.6;
+}
+
+.page-nav {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.page-nav p {
+    margin-right: 10px;
+}
+
+.page-nav .arrow {
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-left: 15px solid #fff;
+}
