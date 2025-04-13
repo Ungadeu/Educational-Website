@@ -2,6 +2,7 @@
 
 body {
     margin: 0;
+    background-image: url(Math\ Background.png);
     font-family: sans-serif;
     background-color: #000;
     color: #fff;
@@ -23,7 +24,7 @@ body {
 
 .title {
     font-size: 2.5em;
-    color: #00ff99;
+    color: #00fff7;
     margin-bottom: 20px;
     line-height: 1.1;
 }
@@ -48,7 +49,7 @@ body {
 }
 
 .nav-item span {
-    background-color: #00ff99;
+    background-color: #00fff7;
     color: #000;
     width: 30px;
     height: 30px;
@@ -73,7 +74,7 @@ body {
 }
 
 .return-button {
-    background-color: #00ff99;
+    background-color: #00fff7;
     color: #000;
     padding: 10px 20px;
     text-align: center;
