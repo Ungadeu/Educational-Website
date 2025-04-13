@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile</title>
+    <link rel="stylesheet" href="userPage.css">
+</head>
+<body>
+    <div class="profile-container">
+        <!-- profile start with core info-->
+        <div class="profile-header">
+            <!-- Field banner - change class to science/math/engineering/technology -->
+            <div class="field-banner engineering">Engineering</div>
+            <!-- Profile Pic can be changed linked to images folder-->
+            <img src="../Images/user_5735921.png" alt="Profile Picture" class="profile-pic">
+        <!-- Details below are placeholder for backend to store actual data-->
+            <div class="username">First Name Last Name</div>
+            <div class="bio">Interested in civil engineering. Likes playing tennis and video games. Enjoys drinking coffee and eating pasta.</div>
+        </div>
+        <!-- profile detail info, email, dates, and status of user-->
+        <div class="profile-details">
+            <div class="detail-card email">
+                <div class="detail-label">Email</div>
+                <div class="detail-value email">firstnameLastname@example.com</div>
+            </div>
+            
+            <div class="detail-card join-date">
+                <div class="detail-label">Join Date</div>
+                <div class="detail-value">April 13, 2025</div>
+            </div>
+            
+            <div class="detail-card">
+                <div class="detail-label">Account Status</div>
+                <div class="detail-value">Active</div>
+            </div>
+            
+            <div class="detail-card last-active">
+                <div class="detail-label">Last Active</div>
+                <div class="detail-value">
+                    <span class="status-indicator status-active"></span>
+                    8 hours ago
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
