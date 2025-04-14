@@ -1,0 +1,72 @@
+/* General styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Header styles */
+.header {
+    display: flex;
+    justify-content: space-around;
+    background-color: #333;
+    padding: 10px;
+}
+
+.header .button {
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+    background-color: #555;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.header .button:hover {
+    background-color: #777;
+}
+
+/* Main layout styles */
+.main-layout {
+    display: flex;
+    min-height: 82vh;
+}
+
+.main-layout .section .section-link {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.main-layout .section:hover .section-link {
+    background-color: #f0f0f0;
+}
+
+.main-layout .section h2 .section-link{
+    margin-bottom: 20px;
+}
+
+.main-layout .section img {
+    max-width: 50%;
+    height: auto;
+}
+.banner {
+    text-align: center;
+    padding: 20px;
+    background-color: #4CAF50; /* Green background */
+    color: white; /* White text */
+}
+
+.banner h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+.section-link {
+    display: block;
+    text-decoration: none; 
+    color: inherit; 
+}

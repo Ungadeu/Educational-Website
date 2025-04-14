@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STEM Community Resources</title>
+    <link rel="stylesheet" href="resourceMain.css">
+</head>
+<body>
+    <!-- Main Navigation Buttons -->
+    <div class="top-buttons">
+        <a href="premium.html" class="top-btn">STEM Forum</a>
+        <a href="../resourceHub.html" class="top-btn">Community Hub</a>
+        <a href="exclusive.html" class="top-btn">User Profile</a>
+    </div>
+    
+    <div class="nav-buttons">
+        <button class="nav-btn" onclick="scrollToSection('part1')">STEM News</button>
+        <button class="nav-btn" onclick="scrollToSection('part2')">STEM Education</button>
+        <button class="nav-btn" onclick="scrollToSection('part3')">STEM Careers</button>
+        <button class="nav-btn" onclick="scrollToSection('part4')">STEM Research</button>
+    </div>
+    
+    <!-- Part 1 -->
+    <div id="part1" class="section part1-bg">
+        <div class="section-heading">
+            <h2>STEM News</h2>
+        </div>
+        
+        <div class="heading-group-container">
+            <!-- Group 1 -->
+            <div class="heading-group">
+                <div class="group-heading">Science News</div>
+                <div class="square-button">news</div>
+                <div class="square-button">news</div>
+                <div class="square-button">news</div>
+            </div>
+            
+            <!-- Group 2 -->
+            <div class="heading-group">
+                <div class="group-heading">Technology News</div>
+                <div class="square-button">news</div>
+                <div class="square-button">news</div>
+                <div class="square-button">news</div>
+            </div>
+            
+            <!-- Group 3 -->
+            <div class="heading-group">
+                <div class="group-heading">Engineering News</div>
+                <div class="square-button">news</div>
+                <div class="square-button">news</div>
+                <div class="square-button">news</div>
+            </div>
+            
+            <!-- Group 4 -->
+            <div class="heading-group">
+                <div class="group-heading">Mathematics News</div>
+                <div class="square-button">news</div>
+                <div class="square-button">news</div>
+                <div class="square-button">news</div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Part 2 -->
+    <div id="part2" class="section part2-bg">
+        <div class="section-heading">
+            <h2>STEM Education</h2>
+        </div>
+        
+        <div class="page-buttons">
+            <button class="square-button page-btn">Science</button>
+            <a href="../Technology.html">
+                <button class="square-button page-btn">Technology</button>
+            </a>
+            <a href="../Engineering.html">   
+                <button class="square-button page-btn">Engineering</button>
+            </a>
+            <a href="../Mathematics.html">   
+                <button class="square-button page-btn">Mathematics</button>
+            </a>
+        </div>
+    </div>
+    
+<!-- Part 3 -->
+<div id="part3" class="section part3-bg">
+    <div class="section-heading">
+        <h2>STEM Careers</h2>
+    </div>
+    
+    <div class="bubble-path">
+        <!-- Main Bubbles Row -->
+        <div class="main-bubbles-container">
+            <div class="main-bubble" onclick="showBubbleSet(1)">Science</div>
+            <div class="main-bubble" onclick="showBubbleSet(2)">Technology</div>
+            <div class="main-bubble" onclick="showBubbleSet(3)">Engineering</div>
+            <div class="main-bubble" onclick="showBubbleSet(4)">Mathematics</div>
+        </div>
+        
+        <!-- Bubble Sets Container -->
+        <div class="bubble-sets-container">
+            <!-- Bubble Set 1 -->
+            <div id="bubble-set-1" class="bubble-set hidden">
+                <div class="sub-bubble">Clinical Technician</div>
+                <div class="sub-bubble">Forensic Science Techinician</div>
+                <div class="sub-bubble">Chemist</div>
+                <div class="sub-bubble">Biologist</div>
+                <div class="sub-bubble">Researcher</div>
+                <div class="sub-bubble">Biomedical Engineer</div>
+            </div>
+            
+            <!-- Bubble Set 2 -->
+            <div id="bubble-set-2" class="bubble-set hidden">
+                <div class="sub-bubble">Database Administrator</div>
+                <div class="sub-bubble">Data Anaylst</div>
+                <div class="sub-bubble">Web Developer</div>
+                <div class="sub-bubble">Software Engineer</div>
+                <div class="sub-bubble">Cybersecurity Specialist</div>
+                <div class="sub-bubble">Cloud Engineer</div>
+            </div>
+            
+            <!-- Bubble Set 3 -->
+            <div id="bubble-set-3" class="bubble-set hidden">
+                <div class="sub-bubble">Marine Engineer</div>
+                <div class="sub-bubble">Mechanical Engineer</div>
+                <div class="sub-bubble">Computer Engineer</div>
+                <div class="sub-bubble">Civil Engineer</div>
+                <div class="sub-bubble">Nuclear Engineer</div>
+                <div class="sub-bubble">Electrical Engineer</div>
+            </div>
+            
+            <!-- Bubble Set 4 -->
+            <div id="bubble-set-4" class="bubble-set hidden">
+                <div class="sub-bubble">Mathematics Teacher</div>
+                <div class="sub-bubble">Accountant</div>
+                <div class="sub-bubble">Financial Analyst</div>
+                <div class="sub-bubble">Statistician</div>
+                <div class="sub-bubble">Mathematician</div>
+                <div class="sub-bubble">Economist</div>
+            </div>
+        </div>
+    </div>
+</div>
+    
+    <!-- Part 4 -->
+    <div id="part4" class="section part4-bg">
+        <div class="section-heading">
+            <h2>STEM Research</h2>
+        </div>
+        
+        <div class="heading-group-container">
+            <!-- Group 1 -->
+            <div class="heading-group">
+                <div class="group-heading">Science Research</div>
+                <div class="square-button">Research</div>
+                <div class="square-button">Research</div>
+                <div class="square-button">Research</div>
+            </div>
+            
+            <!-- Group 2 -->
+            <div class="heading-group">
+                <div class="group-heading">Technology Research</div>
+                <div class="square-button">Research</div>
+                <div class="square-button">Research</div>
+                <div class="square-button">Research</div>
+            </div>
+            
+            <!-- Group 3 -->
+            <div class="heading-group">
+                <div class="group-heading">Engineering Research</div>
+                <div class="square-button">Research</div>
+                <div class="square-button">Research</div>
+                <div class="square-button">Research</div>
+            </div>
+            
+            <!-- Group 4 -->
+            <div class="heading-group">
+                <div class="group-heading">Mathematics Research</div>
+                <div class="square-button">Research</div>
+                <div class="square-button">Research</div>
+                <div class="square-button">Research</div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="resourceMain.js"></script>
+</body>
+</html>
