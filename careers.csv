@@ -1,0 +1,11 @@
+id,title,related_major,description,required_education,median_salary,skills
+1,Software Engineer,Computer Science,Designs and develops software applications for computers and mobile devices.,Bachelor's Degree,$110000,JavaScript;Python;Problem-solving
+2,Data Analyst,Mathematics,Interprets complex data sets to help organizations make informed decisions.,Bachelor's Degree,$80000,Excel;SQL;Data Visualization
+3,Mechanical Engineer,Mechanical Engineering,Designs and builds mechanical systems for a wide range of industries.,Bachelor's Degree,$90000,AutoCAD;Physics;Problem-solving
+4,Web Developer,Computer Science,Creates and maintains websites and web applications with a focus on user experience.,Associate/Bachelor's Degree,$78000,HTML;CSS;JavaScript
+5,Civil Engineer,Civil Engineering,Plans, designs, and oversees construction of infrastructure such as roads and bridges.,Bachelor's Degree,$88000,AutoCAD;Project Management;Structural Analysis
+6,Electrical Engineer,Electrical Engineering,Develops electrical systems and components for use in a variety of technologies.,Bachelor's Degree,$95000,Circuit Design;MATLAB;Problem-solving
+7,Biomedical Engineer,Biomedical Engineering,Combines engineering with biology to develop medical devices and systems.,Bachelor's or Master’s Degree,$92000,Biology;Medical Devices;Data Analysis
+8,Cybersecurity Analyst,Information Technology,Protects networks and systems from cyber threats and data breaches.,Bachelor's Degree,$96000,Networking;Security Tools;Risk Assessment
+9,Environmental Scientist,Environmental Science,Analyzes environmental problems and works to find sustainable solutions.,Bachelor's or Master’s Degree,$76000,Data Analysis;Ecology;Policy Understanding
+10,Machine Learning Engineer,Computer Science,Designs and develops algorithms that allow computers to learn from data.,Bachelor’s or Master’s Degree,$130000,Python;TensorFlow;Statistics
