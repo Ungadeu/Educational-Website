@@ -48,11 +48,13 @@ body {
 
 .main-layout .section h2 .section-link{
     margin-bottom: 20px;
+    text-align: center;
 }
 
 .main-layout .section img {
     max-width: 50%;
     height: auto;
+    margin: 10px 0;
 }
 .banner {
     text-align: center;
@@ -68,5 +70,5 @@ body {
 .section-link {
     display: block;
     text-decoration: none; 
-    color: inherit; 
+    color: inherit;
 }
