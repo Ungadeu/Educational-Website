@@ -4,7 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Modern Tech</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="Techstyle.css">
+    <style>
+        .info-section {
+            margin-top: 20px;
+        }
+        .info-paragraph {
+            display: none; /* Initially hide all paragraphs */
+            line-height: 1.6;
+            margin-bottom: 15px;
+        }
+        .info-image {
+            display: none; /* Initially hide all images */
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 20px;
+        }
+        .nav-item a {
+            text-decoration: none;
+            color: inherit; /* Inherit color from parent */
+            display: block; /* Make the entire nav-item clickable */
+            padding: 10px 0; /* Add some vertical padding for the link */
+        }
+        .nav-item p {
+            margin: 0; /* Remove default paragraph margin */
+        }
+    </style>
 </head>
 <body>
     <div class="container">
@@ -21,32 +46,74 @@
             <div class="nav-section">
                 <div class="nav-item">
                     <span>1</span>
-                    <p>Technological History</p>
+                    <a href="#" onclick="showInfo('techHistory')">
+                        <p>Technological History</p>
+                    </a>
                 </div>
                 <div class="nav-item">
                     <span>2</span>
-                    <p>Robot Dominance</p>
+                    <a href="#" onclick="showInfo('robotDominance')">
+                        <p>Robot Dominance</p>
+                    </a>
                 </div>
                 <div class="nav-item">
                     <span>3</span>
-                    <p>Fun Tech Facts</p>
+                    <a href="#" onclick="showInfo('funTechFacts')">
+                        <p>Fun Tech Facts</p>
+                    </a>
                 </div>
             </div>
         </div>
         <div class="right-section">
-            <p> 
-                Imagine living a long, long time ago, like when Benjamin Franklin was around! He didn't just discover electricity; he invented things like the lightning rod to keep houses safe, the Franklin stove to keep people warm, and even a musical instrument called the glass armonica!  These were super cool inventions for his time, just like your tablet is cool now. Over time, people learned from these ideas and made them even better, like how we have electric heaters instead of Franklin stoves today.<br>
+            <div class="info-section">
+                <p id="techHistory" class="info-paragraph">
+                    Imagine living a long, long time ago, like when Benjamin Franklin was around! He didn't just discover electricity; he invented things like the lightning rod to keep houses safe, the Franklin stove to keep people warm, and even a musical instrument called the glass armonica! 
+                    These were super cool inventions for his time, just like your tablet is cool now. Over time, people learned from these ideas and made them even better, like how we have electric heaters instead of Franklin stoves today.
+                </p>
+                <img id="techHistoryImage" src="Tech Pics/Tech Pic 1.png" alt="Technological History" class="info-image">
 
-                <br>Now, think about how much we use technology every day! We chat with friends on social media, order our favorite toys online, and play awesome video games. Sometimes, people even use super-smart computers called AI to solve problems, even when it might be easier to do it ourselves. But remember, we can also use technology to do amazing things, like build robots that clean up pollution or create apps that help people learn new things. We can make the world a better place with technology!<br> 
-                
-                <br>Here are some fun tech tips you can try at home! If your TV is acting weird, try unplugging it for a minute and plugging it back in – it's like giving it a little nap! If your computer is running slow, try restarting it or closing all the extra tabs in your internet browser. And here's a cool one: if your remote control isn't working, try taking out the batteries and putting them back in, sometimes they just need a little wiggle!
+                <p id="robotDominance" class="info-paragraph">
+                    Now, think about how much we use technology every day! We chat with friends on social media, order our favorite toys online, and play awesome video games. Sometimes, people even use super-smart computers called AI to solve problems, even when it might be easier to do it ourselves. 
+                    But remember, we can also use technology to do amazing things, like build robots that clean up pollution or create apps that help people learn new things. We can make the world a better place with technology!
+                </p>
+                <img id="robotDominanceImage" src="Tech Pics/Tech Pic 2.png" alt="Robot Dominance" class="info-image">
 
-            </p>
-            <div class="page-nav">
-                <p>Return to Main Page</p>
-                <div class="arrow"></div>
+                <p id="funTechFacts" class="info-paragraph">
+                    Here are some fun tech tips you can try at home! If your TV is acting weird, try unplugging it for a minute and plugging it back in – it's like giving it a little nap! If your computer is running slow, try restarting it or closing all the extra tabs in your internet browser. 
+                    And here's a cool one: if your remote control isn't working, try taking out the batteries and putting them back in, sometimes they just need a little wiggle!
+                </p>
+                <img id="funTechFactsImage" src="Tech Pics/Tech Pic 3.png" alt="Fun Tech Facts" class="info-image">
+            </div>
+            <div class="return-button">
+                <p>Return to<br>Main Menu</p>
             </div>
         </div>
     </div>
+
+    <script>
+        function showInfo(id) {
+            // Hide all info paragraphs and images
+            const paragraphs = document.querySelectorAll('.info-paragraph');
+            paragraphs.forEach(p => p.style.display = 'none');
+            const images = document.querySelectorAll('.info-image');
+            images.forEach(img => img.style.display = 'none');
+
+            // Show the selected paragraph and its image
+            const selectedParagraph = document.getElementById(id);
+            const selectedImage = document.getElementById(id + 'Image');
+
+            if (selectedParagraph) {
+                selectedParagraph.style.display = 'block';
+            }
+            if (selectedImage) {
+                selectedImage.style.display = 'block';
+            }
+        }
+
+        // Initially show the first section (Technological History)
+        document.addEventListener('DOMContentLoaded', () => {
+            showInfo('techHistory');
+        });
+    </script>
 </body>
 </html>
