@@ -4,7 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inventive Engineering</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="Engineeringstyle.css">
+    <style>
+        .info-section {
+            margin-top: 20px;
+        }
+        .info-paragraph {
+            display: none; /* Initially hide all paragraphs */
+            line-height: 1.6;
+            margin-bottom: 15px;
+        }
+        .info-image {
+            display: none; /* Initially hide all images */
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 20px;
+        }
+        .nav-item a {
+            text-decoration: none;
+            color: inherit; /* Inherit color from parent */
+            display: block; /* Make the entire nav-item clickable */
+            padding: 10px 0; /* Add some vertical padding for the link */
+        }
+        .nav-item p {
+            margin: 0; /* Remove default paragraph margin */
+        }
+    </style>
 </head>
 <body>
     <div class="container">
@@ -21,26 +46,76 @@
             <div class="nav-items">
                 <div class="nav-item">
                     <span>1</span>
-                    <p>Definition of Engineering</p>
+                    <a href="#" onclick="showInfo('definitionOfEngineering')">
+                        <p>Definition Of Engineering</p>
+                    </a>
                 </div>
                 <div class="nav-item">
                     <span>2</span>
-                    <p>Creative Inventions</p>
+                    <a href="#" onclick="showInfo('creativeInventions')">
+                        <p>Creative Inventions</p>
+                    </a>
                 </div>
                 <div class="nav-item">
                     <span>3</span>
-                    <p>Fun Engineering Facts</p>
+                    <a href="#" onclick="showInfo('funEngineeringFacts')">
+                        <p>Fun Engineering Facts</p>
+                    </a>
                 </div>
             </div>
         </div>
         <div class="right-section">
-            <p>Imagine building the biggest LEGO tower ever, or designing a super-fast race car! That's what engineers do! But engineering isn't just about robots and computers. It's also about building bridges for cars to zoom across (that's transportation engineering), designing rockets to fly to space (aerospace engineering), and figuring out how to make electricity light up our homes (electrical engineering). Engineers are problem-solvers who use science to make amazing things.</p>
-            <p>Long, long ago, people had to travel by horse and write everything by hand. But clever engineers invented things like the steam engine to power trains and factories, the printing press to make books faster, and the telephone to talk to friends far away. These inventions were brand-new ideas that changed the world, showing how engineering can create amazing things that no one had ever thought of before!</p>
-            <p>Did you know engineers design the twisty water slides at waterparks to make sure they're super fun and safe? And when you watch a movie with amazing special effects, engineers helped build the movie sets and design the robots and spaceships you see on screen! Even when we're trying to solve big problems like climate change, engineers are working hard to find new ways to make clean energy and protect our planet. Engineering is all around us, making our world more exciting and helping us solve big challenges!</p>
+            <div class="info-section">
+                <p id="definitionOfEngineering" class="info-paragraph" >
+                    Imagine building the biggest LEGO tower ever, or designing a super-fast race car! That's what engineers do! But engineering isn't just about robots and computers. 
+                    It's also about building bridges for cars to zoom across (that's transportation engineering), designing rockets to fly to space (aerospace engineering), and figuring out how to make electricity light up our homes (electrical engineering). 
+                    Engineers are problem-solvers who use science to make amazing things.
+                </p>
+                <img id="definitionOfEngineeringImage" src="Engine Pics/Engine Pic 1.png" alt="DefinitionOfEngineering" class="info-image">
+
+                <p id="creativeInventions" class="info-paragraph"> 
+                    Long, long ago, people had to travel by horse and write everything by hand. But clever engineers invented things like the steam engine to power trains and factories, the printing press to make books faster, and the telephone to talk to friends far away. 
+                    These inventions were brand-new ideas that changed the world, showing how engineering can create amazing things that no one had ever thought of before!
+                </p>
+                <img id="creativeInventionsImage" src="Engine Pics/Engine Pic 2.png" alt="CreativeInventions" class="info-image">
+
+                <p id="funEngineeringFacts" class="info-paragraph"> 
+                    Did you know engineers design the twisty water slides at waterparks to make sure they're super fun and safe? And when you watch a movie with amazing special effects, engineers helped build the movie sets and design the robots and spaceships you see on screen! 
+                    Even when we're trying to solve big problems like climate change, engineers are working hard to find new ways to make clean energy and protect our planet. Engineering is all around us, making our world more exciting and helping us solve big challenges!
+                </p>
+                <img id="funEngineeringFactsImage" src="Engine Pics/Engine Pic 3.png" alt="FunEngineeringFacts" class="info-image">
+
+            </div>
             <div class="return-button">
                 <p>Return to<br>Main Menu</p>
             </div>
         </div>
     </div>
+
+    <script>
+        function showInfo(id) {
+            // Hide all info paragraphs and images
+            const paragraphs = document.querySelectorAll('.info-paragraph');
+            paragraphs.forEach(p => p.style.display = 'none');
+            const images = document.querySelectorAll('.info-image');
+            images.forEach(img => img.style.display = 'none');
+
+            // Show the selected paragraph and its image
+            const selectedParagraph = document.getElementById(id);
+            const selectedImage = document.getElementById(id + 'Image');
+
+            if (selectedParagraph) {
+                selectedParagraph.style.display = 'block';
+            }
+            if (selectedImage) {
+                selectedImage.style.display = 'block';
+            }
+        }
+
+        // Initially show the first section 
+        document.addEventListener('DOMContentLoaded', () => {
+            showInfo('definitionOfEngineering');
+        });
+    </script>
 </body>
 </html>

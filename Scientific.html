@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Worldwide Mathematics</title>
-    <link rel="stylesheet" href="Mathematics.css">
+    <title>Scientific History</title>
+    <link rel="stylesheet" href="Science.css">
     <style>
         .info-section {
             margin-top: 20px;
@@ -34,56 +34,56 @@
 <body>
     <div class="container">
         <div class="left-section">
-            <h1 class="title">WORLDWIDE<br>MATHEMATICS</h1>
+            <h1 class="title">SCIENTIFIC<br>HISTORY</h1>
             <div class="basics">
                 <p>You'll be shown the basics:</p>
                 <ul>
-                    <li>Why math is important</li>
-                    <li>How much we use math daily</li>
+                    <li>Why science is important</li>
+                    <li>Different discoveries made</li>
                     <li>Fun facts on the topic</li>
                 </ul>
             </div>
             <div class="nav-items">
                 <div class="nav-item">
                     <span>1</span>
-                    <a href="#" onclick="showInfo('definitionOfMath')">
-                        <p>Definition of Math</p>
+                    <a href="#" onclick="showInfo('definitionOfScience')">
+                        <p>Definition of Science</p>
                     </a>
                 </div>
                 <div class="nav-item">
                     <span>2</span>
-                    <a href="#" onclick="showInfo('dailyMathematics')">
-                        <p>Daily Mathematics</p>
+                    <a href="#" onclick="showInfo('importantDiscoveries')">
+                        <p>Important Discoveries</p>
                     </a>
                 </div>
                 <div class="nav-item">
                     <span>3</span>
-                    <a href="#" onclick="showInfo('funMathFacts')">
-                        <p>Fun Math Facts</p>
+                    <a href="#" onclick="showInfo('funScienceFacts')">
+                        <p>Fun Science Facts</p>
                     </a>
                 </div>
             </div>
         </div>
         <div class="right-section">
             <div class="info-section">
-                <p id="definitionOfMath" class="info-paragraph">
-                    Math is like a special code made of numbers, shapes, and patterns that helps us understand the world! Think about counting your fingers - that's math! Noticing the pattern on a butterfly's wings? That's math too! 
-                    We use this math code like secret instructions to build amazing things like giant skyscrapers, super-fast cars, and even theme parks. Math helps figure out how strong to make a bridge or how high a rocket needs to go!
+                <p id="definitionOfScience" class="info-paragraph">
+                    Science is like a superpower that helps us understand everything around us! It teaches us that all things are made of tiny building blocks called atoms, and that living things are made of even tinier parts called cells. 
+                    Science also helps us explore all the different environments on our planet, from the deepest oceans to the tallest mountains, and figure out how they work. It's like having a secret key to unlock the mysteries of the universe!
                 </p>
-                <img id="definitionOfMathImage" src="Math Pics/Math Pic 1.png" alt="Definition Of Math" class="info-image">
+                <img id="definitionOfScienceImage" src="Sci Pics/Sci Pic 1.png" alt="Definition Of Science" class="info-image">
 
-                <p id="dailyMathematics" class="info-paragraph">
-                    You use math all day long, not just when you're doing homework! Imagine a factory making your favorite juice. They use math to measure exactly the right amount of juice for each bottle and to count how many bottles fit into a big truck. 
-                    When people make video games, they use math to make characters jump just right and to build the cool worlds you play in. Even when you share your snacks equally with a friend (that's dividing!)
+                <p id="importantDiscoveries" class="info-paragraph">
+                    Over time, curious scientists have made incredible discoveries! They've dug up giant bones that tell us about amazing creatures called dinosaurs that lived millions of years ago. 
+                    They've also carefully studied our bodies to learn how all our different parts work together, like our hearts and lungs. 
+                    And they've figured out how different things mix and change, like simple chemical reactions that happen when you bake a cake or mix vinegar and baking soda! These discoveries help us understand our history and how the world works.
                 </p>
-                <img id="dailyMathematicsImage" src="Math Pics/Math Pic 2.png" alt="Daily Mathematics" class="info-image">
+                <img id="importantDiscoveriesImage" src="Sci Pics/Sci Pic 2.png" alt="Important Discoveries" class="info-image">
 
-                <p id="funMathFacts" class="info-paragraph">
-                    Math has some really cool tricks and fun facts! Did you know that bees build their honeycombs using perfect six-sided shapes called hexagons? It's the best shape to hold the most honey! 
-                    Here's a neat finger trick for multiplying by 9: Hold up both hands with your palms facing you. 
-                    To multiply 9 x 4, bend down your fourth finger (counting from the left). Now look - you have 3 fingers up before the bent one (that's 30) and 6 fingers up after the bent one (that's 6). Put them together... 36! So, 9 x 4 = 36. Try it for other numbers, it's like magic!
+                <p id="funScienceFacts" class="info-paragraph">
+                    Science can even be super fun to do right at home! You can put a drop of dish soap into a bowl of milk with food coloring and watch the colors swirl and dance! Or, if you drop some Mentos into a bottle of soda, you can see a fizzy eruption! 
+                    You can even make sparkly ice crystals by putting a sealed water bottle in the freezer just until it's almost frozen, then quickly taking it out and tapping it! Science is full of amazing things you can explore yourself!
                 </p>
-                <img id="funMathFactsImage" src="Math Pics/Math Pic 3.png" alt="Fun Math Facts" class="info-image">
+                <img id="funScienceFactsImage" src="Sci Pics/Sci Pic 3.png" alt="Fun Science Facts" class="info-image">
 
             </div>
             <div class="return-button">
@@ -114,8 +114,9 @@
 
         // Initially show the first section
         document.addEventListener('DOMContentLoaded', () => {
-            showInfo('definitionOfMath');
+            showInfo('definitionOfScience');
         });
     </script>
+
 </body>
 </html>

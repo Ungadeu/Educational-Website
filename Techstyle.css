@@ -1,13 +1,13 @@
 body {
   margin: 0; 
   padding: 0; 
-  background-image: url('/Users/ungadeu18students.desu.edu/Desktop/Web\ Develop\ Work\:Notes/Web\ Designing\ for\ Educational/MODERN\ TECH\ background.png'); 
-  background-size: cover; /* Cover the entire viewport */
-  background-repeat: no-repeat; /* Prevent image from repeating */
-  background-position: center center; /* Center the image */
-  height: 100vh; /* Make the body take up the full viewport height */
-  color: white; /* Set default text color to white for visibility */
-  font-family: sans-serif; /* Set a default font */
+  background-image: url('Tech Pics/Tech Back.png'); 
+  background-size: cover; 
+  background-repeat: no-repeat; 
+  background-position: center center; 
+  height: 100vh; 
+  color: white; 
+  font-family: sans-serif; 
 }
 
 .container {
@@ -16,7 +16,7 @@ body {
 }
 
 .left-section {
-    width: 35%; /* Adjust as needed */
+    width: 35%; 
     padding: 20px;
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)); /* Gradient background */
     display: flex;
@@ -25,7 +25,7 @@ body {
 }
 
 .modern-tech-title {
-    color: #00ff99; /* Green title */
+    color: #0beff7; 
     font-size: 2.5em;
     margin-bottom: 20px;
 }
@@ -50,7 +50,7 @@ body {
 }
 
 .nav-item span {
-    background-color: #00ff99; /* Green circle */
+    background-color: #0beff7; 
     color: #000;
     width: 30px;
     height: 30px;
@@ -62,7 +62,7 @@ body {
 }
 
 .right-section {
-    width: 65%; /* Adjust as needed */
+    width: 65%; 
     padding: 20px;
     background-image: linear-gradient(to left, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)); /* Gradient background */
     display: flex;
@@ -74,20 +74,12 @@ body {
     line-height: 1.6;
 }
 
-.page-nav {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-}
-
-.page-nav p {
-    margin-right: 10px;
-}
-
-.page-nav .arrow {
-    width: 0;
-    height: 0;
-    border-top: 10px solid transparent;
-    border-bottom: 10px solid transparent;
-    border-left: 15px solid #fff;
+.return-button {
+    background-color: #0beff7;
+    color: #000;
+    padding: 10px 20px;
+    text-align: center;
+    border-radius: 5px;
+    cursor: pointer;
+    align-self: flex-end;
 }
