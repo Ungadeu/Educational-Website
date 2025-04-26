@@ -41,6 +41,7 @@ const UserPage = () => {
                     </div>
                 </div>
             </div>
+            <script src="userPage.js"></script>
         </div>
     );
 };
