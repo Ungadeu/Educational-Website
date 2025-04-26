@@ -1,7 +1,7 @@
 // fetch user data from the server
 async function fetchUserData(email) {
     try {
-        const response = await fetch(`http://localhost:5000/user/${email}`);
+        const response = await fetch(`http://localhost:3000/user/${email}`);
         if (!response.ok) {
             throw new Error('Network response was not ok');
         }
@@ -19,4 +19,4 @@ async function fetchUserData(email) {
     }
 }
 // Call the function with a sample user email
-fetchUserData('john.doe@example.com');
+fetchUserData('Adnaan.Thadathil@example.com');
